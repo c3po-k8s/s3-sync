@@ -1,5 +1,5 @@
 'use strict'
-import log from 'logger'
+import log from './logger.js'
 import minio from './minio.js'
 import fs from 'fs'
 let LOCAL_PATH = process.env.LOCAL_PATH || '/app/src/data', BUCKET = process.env.S3_SYNC_BUCKET, BUCKET_PREFIX = process.env.S3_SYNC_PREFIX

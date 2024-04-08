@@ -1,5 +1,5 @@
 'use strict'
-import log from 'logger'
+import log from './logger.js'
 import watchFolder from './watchFolder.js'
 import restoreFolder from './restoreFolder.js'
 let logLevel = process.env.LOG_LEVEL || log.Level.INFO;

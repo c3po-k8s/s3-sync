@@ -1,6 +1,6 @@
 'use strict'
 import Watcher from 'watcher'
-import log from 'logger'
+import log from './logger.js'
 import minio from './minio.js'
 import fs from 'fs'
 //const minio = require('./minio')

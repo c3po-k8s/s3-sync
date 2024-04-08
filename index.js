@@ -1,5 +1,5 @@
 'use strict'
-import log from 'logger'
+import log from './src/logger.js'
 
 process.on('unhandledRejection', (error) => {
   log.error(error)
