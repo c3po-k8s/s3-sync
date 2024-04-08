@@ -9,7 +9,5 @@ else
   registry="ghcr.io"
   echo "using ghcr.io for test build"
 fi
-container="${registry}/${tag}:test"
-echo building $container
-docker build -t $container .
-docker push $container
+docker build -t "ghcr.io/${tag}:latest" .
+docker push "ghcr.io/${tag}:latest"

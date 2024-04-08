@@ -4,6 +4,7 @@ COPY package*.json ./
 RUN npm install --omit=dev
 
 FROM node:20-alpine AS app
+LABEL org.opencontainers.image.source https://github.com/c3po-k8s/s3-sync
 WORKDIR /app
 
 RUN apk update && \
@@ -17,7 +18,6 @@ COPY --from=builder node_modules node_modules/
 COPY package*.json ./
 COPY index.js index.js
 COPY src ./src
-RUN npm install -g nodemon
 
 RUN mkdir -p /app/src/data && chmod -R 777 /app/src/data
 

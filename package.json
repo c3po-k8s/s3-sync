@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "update": "chmod a+x updategitdependency.sh && ./updategitdependency.sh",
-    "build": "chmod a+x buildtestimage.sh && ./buildtestimage.sh c3pobot/s3-sync"
+    "build": "chmod a+x buildtestimage.sh && ./buildtestimage.sh c3po-k8s/s3-sync",
+    "prod": "chmod a+x buildprodimage.sh && ./buildprodimage.sh c3po-k8s/s3-sync"
   },
   "nodemonConfig": {
     "ignore": [
