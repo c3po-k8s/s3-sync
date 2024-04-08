@@ -1,0 +1,12 @@
+.git
+.gitignore
+data
+node_modules
+.env
+.env-example
+Dockerfile
+.testregistry
+buildprodimage.sh
+buildtestimage.sh
+updategitdependency.sh
+cache
